@@ -2,4 +2,115 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
+
+.container {
+  max-width: 1170px;
+  margin: auto;
+}
+
+@font-face {
+  font-family: 'Roboto Regular';
+  src: url("../fonts/RobotoRegular/Roboto-Regular.eot");
+  src: url("../fonts/RobotoRegular/Roboto-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoRegular/Roboto-Regular.woff") format("woff"), url("../fonts/RobotoRegular/Roboto-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto Bold';
+  src: url("..fonts/RobotoBold/Roboto-Bold.eot");
+  src: url("..fonts/RobotoBold/Roboto-Bold.eot?#iefix") format("embedded-opentype"), url("..fonts/RobotoBold/Roboto-Bold.woff") format("woff"), url("..fonts/RobotoBold/Roboto-Bold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: 'Roboto Regular', sans-serif;
+  font-size: 16px;
+  color: #333333;
+  min-width: 320px;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: block;
+  margin-top: 15px;
+  z-index: 10;
+}
+
+.navbar-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  min-height: 86px;
+}
+
+.menu-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: transparent;
+  border: none;
+  height: 46px;
+  width: 46px;
+  padding: 0;
+  cursor: pointer;
+}
+
+.menu-btn__line {
+  display: block;
+  height: 4px;
+  width: 46px;
+  border-radius: 2px;
+  background-color: #fff;
+  margin: 5px 0;
+}
+
+.navbar__phone {
+  display: block;
+}
+
+.navbar__phone a {
+  font-family: 'Roboto Bold', sans-serif;
+  font-size: 24px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.hero {
+  position: relative;
+  background: url(../img/hero-bg.jpg) no-repeat center;
+  background-size: cover;
+  height: 100vh;
+}
+
+.hero .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(4.11%, rgba(46, 4, 4, 0.8)), color-stop(19.9%, rgba(49, 5, 5, 0)), color-stop(78.44%, rgba(49, 5, 5, 0)), color-stop(92.05%, rgba(49, 5, 5, 0.27))), rgba(46, 4, 4, 0.2);
+  background: linear-gradient(180deg, rgba(46, 4, 4, 0.8) 4.11%, rgba(49, 5, 5, 0) 19.9%, rgba(49, 5, 5, 0) 78.44%, rgba(49, 5, 5, 0.27) 92.05%), rgba(46, 4, 4, 0.2);
+  mix-blend-mode: multiply;
+}
 /*# sourceMappingURL=style.css.map */
