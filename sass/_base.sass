@@ -8,10 +8,13 @@ h1
 	+bold
 	font-size: 48px
 	color: #fff
+@media (max-width: 768px)
+	h1
+		font-size: 36px
 
 .base__btn
 	display: inline-block
-	padding: 18px 22px 16px
+	padding: 18px 26px 16px
 	border: none
 	+bold
 	text-align: center
@@ -20,3 +23,14 @@ h1
 	background: linear-gradient(180deg, #65D331 0%, #38A41D 100%)
 	border-radius: 10px
 	cursor: pointer
+	box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.35)
+
+.col
+	position: relative
+	width: 100%
+	min-height: 1px
+	padding-left: 15px
+	padding-right: 15px
+	&-4
+		flex: 0 0 33.33333%
+		max-width: 33.33333%

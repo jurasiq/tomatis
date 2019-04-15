@@ -11,10 +11,16 @@
 		padding-left: 15px
 		padding-right: 15px
 		align-items: center
-		justify-content: space-between
+		justify-content: center
 		min-height: 86px
-		.logo
-			display: inline-block
+@media (max-width: 567px)
+	.navbar-wrap
+		padding: 0
+
+.logo
+	position: relative
+	display: block
+	text-align: center
 
 .menu
 	&-btn
@@ -24,21 +30,28 @@
 		justify-content: center
 		background-color: transparent
 		border: none
-		height: 46px
-		width: 46px
+		height: 36px
+		width: 36px
 		padding: 0
 		cursor: pointer
 		&__line
 			display: block
 			height: 4px
-			width: 46px
+			width: 36px
 			border-radius: 2px
 			background-color: #fff
-			margin: 5px 0
-.navbar__phone
+			margin: 4px 0
+.navbar-phone
 	display: block
+	text-align: right
 	a
 		+bold
 		font-size: 24px
 		color: #fff
 		text-decoration: none
+	.phone__number
+		margin-left: 15px
+@media (max-width: 768px)
+	.navbar-phone
+		.phone__number
+			display: none

@@ -45,9 +45,15 @@ h1 {
   color: #fff;
 }
 
+@media (max-width: 768px) {
+  h1 {
+    font-size: 36px;
+  }
+}
+
 .base__btn {
   display: inline-block;
-  padding: 18px 22px 16px;
+  padding: 18px 26px 16px;
   border: none;
   font-family: 'Roboto Bold', sans-serif;
   text-align: center;
@@ -57,6 +63,23 @@ h1 {
   background: linear-gradient(180deg, #65D331 0%, #38A41D 100%);
   border-radius: 10px;
   cursor: pointer;
+  -webkit-box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.35);
+          box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.35);
+}
+
+.col {
+  position: relative;
+  width: 100%;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.col-4 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 33.33333%;
+          flex: 0 0 33.33333%;
+  max-width: 33.33333%;
 }
 
 .navbar {
@@ -78,14 +101,22 @@ h1 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   min-height: 86px;
 }
 
-.navbar-wrap .logo {
-  display: inline-block;
+@media (max-width: 567px) {
+  .navbar-wrap {
+    padding: 0;
+  }
+}
+
+.logo {
+  position: relative;
+  display: block;
+  text-align: center;
 }
 
 .menu-btn {
@@ -104,8 +135,8 @@ h1 {
           justify-content: center;
   background-color: transparent;
   border: none;
-  height: 46px;
-  width: 46px;
+  height: 36px;
+  width: 36px;
   padding: 0;
   cursor: pointer;
 }
@@ -113,26 +144,37 @@ h1 {
 .menu-btn__line {
   display: block;
   height: 4px;
-  width: 46px;
+  width: 36px;
   border-radius: 2px;
   background-color: #fff;
-  margin: 5px 0;
+  margin: 4px 0;
 }
 
-.navbar__phone {
+.navbar-phone {
   display: block;
+  text-align: right;
 }
 
-.navbar__phone a {
+.navbar-phone a {
   font-family: 'Roboto Bold', sans-serif;
   font-size: 24px;
   color: #fff;
   text-decoration: none;
 }
 
+.navbar-phone .phone__number {
+  margin-left: 15px;
+}
+
+@media (max-width: 768px) {
+  .navbar-phone .phone__number {
+    display: none;
+  }
+}
+
 .hero {
   position: relative;
-  background: url(../img/hero-bg.jpg) no-repeat center;
+  background-position: top center;
   background-size: cover;
   height: 100vh;
 }
@@ -150,7 +192,7 @@ h1 {
 
 .hero .index-title {
   position: relative;
-  padding-top: 50vh;
+  padding-top: 46vh;
   padding-left: 5vw;
   padding-right: 5vw;
   z-index: 1;
@@ -165,5 +207,16 @@ h1 {
 
 .hero .index-title h1 {
   text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.35);
+}
+
+@media (max-width: 768px) {
+  .hero {
+    background-position: 80% 50%;
+  }
+  .hero .index-title {
+    padding-top: 38vh;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
