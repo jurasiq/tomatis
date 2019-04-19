@@ -5,7 +5,10 @@
 
 .container {
   max-width: 1170px;
-  margin: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .container-fluid {
@@ -49,6 +52,18 @@ h1 {
   h1 {
     font-size: 36px;
   }
+}
+
+h2 {
+  font-family: 'Roboto Bold', sans-serif;
+  font-size: 32px;
+  color: #fd4d40;
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+  font-size: 26px;
 }
 
 .base__btn {
@@ -310,5 +325,37 @@ h1 {
     margin-top: 50px;
     margin-bottom: 50px;
   }
+}
+
+.st-about .about-specialist {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 10px 0;
+}
+
+.st-about .about-specialist .photo {
+  position: relative;
+  height: auto;
+  max-width: 570px;
+  margin-bottom: 30px;
+}
+
+.st-about .about-specialist .photo img {
+  width: 100%;
+}
+
+.st-about .about-specialist .about-text {
+  max-width: 540px;
+}
+
+.st-about .about-tomatis {
+  margin: 40px 0;
 }
 /*# sourceMappingURL=style.css.map */
