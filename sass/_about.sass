@@ -1,0 +1,55 @@
+.st-about
+	display: block
+	position: relative
+	margin-bottom: 30px
+
+	.advantage_wrap
+		position: relative
+		width: 100%
+		display: flex
+		flex-wrap: wrap
+		justify-content: space-between
+		align-items: center
+		margin-top: -30px
+		.advantage_item
+			position: relative
+			display: flex
+			flex-direction: column
+			align-items: center
+			justify-content: center
+			margin-bottom: 30px
+			padding: 15px
+			text-align: center
+			max-width: 370px
+			height: 180px
+			border-radius: 10px
+			color: #fff
+			box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.15)
+			.text-block
+				margin-top: 15px
+				h3
+					margin: 0
+					margin-bottom: 15px
+				p
+					margin: 0
+			.icon
+				display: flex
+				justify-content: center
+				align-items: center
+				position: absolute
+				width: 86px
+				height: 86px
+				margin-top: -92px
+				border-radius: 50%
+				border: 3px solid #fff
+				font-size: 38px
+
+	@media (max-width: 578px)
+		.advantage_wrap
+			justify-content: center
+			margin-top: 30px
+
+		@media (max-width: 578px)
+			.advantage_item
+				margin-top: 50px
+				margin-bottom: 50px
