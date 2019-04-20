@@ -358,4 +358,11 @@ h2 {
 .st-about .about-tomatis {
   margin: 40px 0;
 }
+
+.st-video {
+  display: block;
+  position: relative;
+  padding: 40px 0;
+  background: #e1eef2;
+}
 /*# sourceMappingURL=style.css.map */
