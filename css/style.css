@@ -66,6 +66,17 @@ h2 {
   font-size: 26px;
 }
 
+h3 {
+  font-family: 'Roboto Bold', sans-serif;
+  font-size: 24px;
+}
+
+h4 {
+  font-family: 'Roboto Bold', sans-serif;
+  font-size: 18px;
+  color: #fd4d40;
+}
+
 .base__btn {
   display: inline-block;
   padding: 18px 26px 16px;
@@ -362,7 +373,51 @@ h2 {
 .st-video {
   display: block;
   position: relative;
-  padding: 40px 0;
+  padding: 25px 0;
   background: #e1eef2;
+}
+
+.content-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.content-wrap .areas {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 50%;
+          flex: 0 0 50%;
+  max-width: 50%;
+}
+
+.content-wrap .areas .area-item {
+  max-width: 255px;
+  min-width: 180px;
+  margin: 0 15px 15px 0;
+}
+
+.content-wrap .areas .area-item h4 {
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.content-wrap .areas .area-item p {
+  margin: 0;
+}
+
+.content-wrap .video-preview h3 {
+  margin: 0;
+}
+
+.content-wrap .video-preview video {
+  width: 100px;
+  min-width: 320px;
 }
 /*# sourceMappingURL=style.css.map */
