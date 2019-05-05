@@ -241,6 +241,13 @@ h4 {
   color: #fd4d40;
 }
 
+.sub {
+  font-family: 'Roboto Regular', sans-serif;
+  font-size: 24px;
+  color: #999999;
+  text-align: center;
+}
+
 .base__btn {
   display: inline-block;
   padding: 18px 26px 16px;
@@ -593,5 +600,20 @@ h4 {
   height: auto;
   max-height: 100%;
   min-width: 320px;
+}
+
+.st-services {
+  padding: 40px 0;
+}
+
+.st-services h2 {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.st-services .services-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 /*# sourceMappingURL=style.css.map */
