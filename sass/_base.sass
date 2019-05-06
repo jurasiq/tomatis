@@ -1,7 +1,6 @@
 body
 	width: 100%
 	+regular
-	font-size: 16px
 	color: #333333
 	min-width: 320px
 
@@ -37,6 +36,10 @@ h4
 	color: #999999
 	text-align: center
 
+p
+	line-height: 21px
+	font-size: 16px
+
 .base__btn
 	display: inline-block
 	padding: 18px 26px 16px
@@ -50,6 +53,15 @@ h4
 	cursor: pointer
 	box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.35)
 
+.active-btn
+	background: #FD4D40
+	border: none
+	border-radius: 10px
+	+bold
+	color: #ffffff
+	padding: 8px 26px
+	cursor: pointer
+
 .col
 	position: relative
 	width: 100%
@@ -59,3 +71,11 @@ h4
 	&-4
 		flex: 0 0 33.33333%
 		max-width: 33.33333%
+
+.base-link
+	text-align: center
+	margin: 40px 0
+	a
+		+bold
+		font-size: 28px
+		color: #4987F1
