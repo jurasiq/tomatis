@@ -813,4 +813,13 @@ p {
   width: 100%;
   border-radius: 10px;
 }
+
+.st-statyi {
+  padding: 40px 0;
+}
+
+.st-statyi h2 {
+  text-align: center;
+  text-transform: uppercase;
+}
 /*# sourceMappingURL=style.css.map */
