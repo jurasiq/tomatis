@@ -5,11 +5,29 @@
 		text-transform: uppercase
 
 .slider-item
-	position: relative
-	margin: auto
+	display: flex
+	align-items: flex-start
+	background: #fff
 	padding: 30px
-	max-width: 970px
-	height: 380px
-	background: #FFFFFF
-	box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.25)
-	border-radius: 10px
+	&-img
+		img
+			width: 440px
+			display: block
+			border-radius: 10px
+	&-text
+		display: inline-block
+		padding-left: 30px
+		max-width: 440px
+		h3
+			margin: 0 0 10px
+			font-size: 32px
+		span
+			font-size: 14px
+			font-style: italic
+		p
+			font-size: 18px
+		.active-btn
+			margin: 0
+			position: absolute
+			bottom: 30px
+			right: 30px
