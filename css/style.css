@@ -522,7 +522,7 @@ p {
   position: absolute;
   width: 86px;
   height: 86px;
-  margin-top: -92px;
+  top: -46px;
   border-radius: 50%;
   border: 3px solid #fff;
   font-size: 38px;
@@ -865,32 +865,5 @@ p {
   position: absolute;
   bottom: 30px;
   right: 30px;
-}
-
-.rslides {
-  position: relative;
-  list-style: none;
-  overflow: hidden;
-  max-width: 970px;
-  margin: 0 auto;
-  padding: 0;
-  -webkit-box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.25);
-          box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.25);
-  border-radius: 10px;
-}
-
-.rslides li {
-  -webkit-backface-visibility: hidden;
-  position: absolute;
-  display: none;
-  width: 100%;
-  left: 0;
-  top: 0;
-}
-
-.rslides li:first-child {
-  position: relative;
-  display: block;
-  float: left;
 }
 /*# sourceMappingURL=style.css.map */
